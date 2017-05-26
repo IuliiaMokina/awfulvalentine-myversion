@@ -15,22 +15,18 @@ public class Browser {
 
 		// "E:\\lib\\chromedriver_win32\\chromedriver.exe");
 
+		System.setProperty("webdriver.chrome.driver", "C:\\temp\\chromedriver.exe");
+		
 		String browserName = System.getProperty("browser");
 
 		if (browserName == null || "chrome".equals(browserName))
-
 			return startChromeDriver();
-
 		else if ("firefox".equals(browserName))
-
 			return startFirefoxDriver();
-
 		else if ("safari".equals(browserName))
-
 			return startSafariDriver();
 
 		throw new RuntimeException("Unsupported browser: " + browserName);
-
 	}
 
 	private static WebDriver startSafariDriver() {

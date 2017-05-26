@@ -1,96 +1,60 @@
 package com.valentine.test;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+//import org.apache.tools.ant.taskdefs.WaitFor;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.openqa.selenium.JavascriptExecutor;
-import org.testng.Assert;
 
-import com.valentine.tools.Browser;
+import com.valentine.app.HomePage;
+import com.valentine.app.AwfulValentine;
+import com.valentine.app.ShoppingCartPage;
 
+import ru.yandex.qatools.allure.annotations.Features;
+import ru.yandex.qatools.allure.annotations.Stories;
+
+@Features("Shopping")
+@Stories("Continue Shopping from Cart page")
 public class ContinueShoppingFromCartTest {
 
-	private WebDriver driver;
+	private HomePage onHomePage;
+	private ShoppingCartPage onShoppingCartPage;
 
 	@BeforeClass
 	public void setup() {
-
-		driver = Browser.open();
-		driver.get("http://awful-valentine.com/");
-
-		// AwfulValentine.openHomePage();
-
-		driver.findElement(By.cssSelector("[href='#et-offer-post-30']")).click();
-		WebElement addToCartPopup = driver.findElement(By.id("fancybox-wrap"));
-
-		waitFor(1000);
-
-		driver.findElement(By.id("addToCart_6_2")).click();
-
-		waitFor(3000);
-
+		onShoppingCartPage = AwfulValentine.openHomePage().addToCartSpecialOffer(1);
 	}
 
 	@Test
-	public void testContinueShoppingButtonRedirectsToHome() {
+	public void testContinueShoppingButtonRedirectsToHomePage() {
+		onHomePage = onShoppingCartPage.clickContinueShoppingButton();
 
-		driver.findElement(By.id("continueShopping")).click();
+		assertEquals(onHomePage.getCurrentUrl(), "http://awful-valentine.com/",
+				"Incorrect URL after click on 'Continue Shopping' button");
 
-		waitFor(3000);
-
-		Assert.assertEquals(driver.getCurrentUrl(), "http://awful-valentine.com/");
 	}
 
 	@Test(dependsOnMethods = "testContinueShoppingButtonRedirectsToHomePage")
-
 	public void testAddingSecondItemToShoppingCart() {
+		onShoppingCartPage = onHomePage.addToCartRecentProduct(4);
+		
 
-		waitFor(2000);
-
-		WebElement cartButton = driver.findElement(By.cssSelector("[href='#et-entry-post-21']"));
-		JavascriptExecutor.class.cast(driver).executeScript("arguments[0].scrollIntoView(true)", cartButton);
-
-		waitFor(2000);
-
-		cartButton.click();
-		WebElement addToCartPopup = driver.findElement(By.id("fancybox-wrap"));
-
-		waitFor(1000);
-
-		driver.findElement(By.id("addToCart_3_2")).click();
-
-		waitFor(3000);
-
-		Assert.assertEquals(driver.getCurrentUrl(), "http://awful-valentine.com/store/cart/",
+		assertEquals(onShoppingCartPage.getCurrentUrl(), "http://awful-valentine.com/store/cart/",
 				"Incorrect URL after adding second item");
-		String shoppingCartSummary = driver.findElement(By.id("Cart66WidgetCartEmptyAdvanced")).getText();
-		Assert.assertTrue(shoppingCartSummary.startsWith("You have 2 items"), "\nShopping \n");
+
+		String shoppingCartSummary = onShoppingCartPage.getSummary();
+		String youHave2Items = "You have 2 items";
+
+		assertTrue(shoppingCartSummary.startsWith(youHave2Items),
+				"\nShopping summary does not start with text: " + youHave2Items + " \n");
 
 	}
 
-	@AfterClass
-
+	@AfterClass(alwaysRun = true)
 	public void tearDown() {
-
-		driver.close();
-
+		AwfulValentine.close();
 	}
-
-	private void waitFor(int milliseconds) {
-
-		try {
-
-			Thread.sleep(milliseconds);
-
-		} catch (Exception e) {
-
-			// TODO: handle exception
-
-		}
-
-	}
-
+	
 }

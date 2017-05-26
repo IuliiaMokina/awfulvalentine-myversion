@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression" preserve-order="true">
+
+	<test name="Valentine tests" preserve-order="true">
+		<classes>
+			<class name="com.valentine.test.AddItemToCartTest"></class>
+			<class name="com.valentine.test.ContinueShoppingFromCartTest"></class>
+		</classes>
+	</test>
+
+	</suite>
