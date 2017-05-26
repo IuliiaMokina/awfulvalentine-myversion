@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="42889" started-at="2017-05-26T15:51:00Z" finished-at="2017-05-26T15:51:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="42889" started-at="2017-05-26T15:51:00Z" finished-at="2017-05-26T15:51:43Z">
+      <class name="com.valentine.test.NavigationByLinksTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="setup" is-config="true" duration-ms="31" started-at="2017-05-26T18:51:00Z" finished-at="2017-05-26T18:51:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="HomePage()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="HomePage" is-config="true" duration-ms="9451" started-at="2017-05-26T18:51:00Z" finished-at="2017-05-26T18:51:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method status="PASS" signature="NavigationToCodePage()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="NavigationToCodePage" duration-ms="2397" started-at="2017-05-26T18:51:10Z" finished-at="2017-05-26T18:51:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigationToCodePage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="tearDown" is-config="true" duration-ms="2125" started-at="2017-05-26T18:51:12Z" finished-at="2017-05-26T18:51:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="HomePage()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="HomePage" is-config="true" duration-ms="7972" started-at="2017-05-26T18:51:14Z" finished-at="2017-05-26T18:51:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method status="PASS" signature="NavigationToContactUsPage()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="NavigationToContactUsPage" duration-ms="2275" started-at="2017-05-26T18:51:22Z" finished-at="2017-05-26T18:51:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigationToContactUsPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="tearDown" is-config="true" duration-ms="189" started-at="2017-05-26T18:51:24Z" finished-at="2017-05-26T18:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="HomePage()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="HomePage" is-config="true" duration-ms="7297" started-at="2017-05-26T18:51:25Z" finished-at="2017-05-26T18:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method status="PASS" signature="NavigationToPurchaseFormPage()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="NavigationToPurchaseFormPage" duration-ms="1918" started-at="2017-05-26T18:51:32Z" finished-at="2017-05-26T18:51:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigationToPurchaseFormPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="tearDown" is-config="true" duration-ms="138" started-at="2017-05-26T18:51:34Z" finished-at="2017-05-26T18:51:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="HomePage()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="HomePage" is-config="true" duration-ms="6727" started-at="2017-05-26T18:51:34Z" finished-at="2017-05-26T18:51:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage -->
+        <test-method status="PASS" signature="NavigationToStorePage()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="NavigationToStorePage" duration-ms="2070" started-at="2017-05-26T18:51:41Z" finished-at="2017-05-26T18:51:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigationToStorePage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.valentine.test.NavigationByLinksTest@558756be]" name="tearDown" is-config="true" duration-ms="134" started-at="2017-05-26T18:51:43Z" finished-at="2017-05-26T18:51:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.valentine.test.NavigationByLinksTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

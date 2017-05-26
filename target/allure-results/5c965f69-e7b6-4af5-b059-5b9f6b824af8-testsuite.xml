@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1495812804149" stop="1495812818489" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1495812814062" stop="1495812816156" status="passed">
+            <name>NavigationToCodePage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationByLinksTest"/>
+                <label name="testMethod" value="NavigationToCodePage"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="6980@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1495812816167" stop="1495812818301" status="passed">
+            <name>NavigationToContactUsPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationByLinksTest"/>
+                <label name="testMethod" value="NavigationToContactUsPage"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="6980@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

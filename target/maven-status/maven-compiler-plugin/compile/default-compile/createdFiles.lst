@@ -1,0 +1,6 @@
+com\valentine\data\ProductDataModel.class
+com\valentine\tools\Browser.class
+com\valentine\tools\Reporter.class
+com\valentine\app\AwfulValentine.class
+com\valentine\app\ShoppingCartPage.class
+com\valentine\app\HomePage.class
