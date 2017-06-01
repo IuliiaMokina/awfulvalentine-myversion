@@ -28,8 +28,17 @@ public class HomePage {
 	@FindBy(id = "fancybox-wrap")
 	private WebElement addToCartPopup;
 	
-	//@FindBy(className = "#top-menu > li:nth-child(2)") 
-	//private WebElement codeLink;
+	@FindBy(css = "#top-menu > li:nth-child(2)") 
+	private WebElement codeLink;
+	
+	@FindBy(css = "#top-menu > li:nth-child(3)")
+	private WebElement contactUsLink;
+	
+	@FindBy(css = "#top-menu > li:nth-child(4)")
+	private WebElement purchaseFormsLink;
+	
+	@FindBy(css = "#top-menu > li:nth-child(5)")
+	private WebElement storeLink;
 	
 	private WebDriver driver;
 
@@ -106,7 +115,31 @@ public class HomePage {
 		return new ShoppingCartPage(driver);
 
 	}
+	
+	@Step("Click 'Code' link")
+	public CodePage clickCodeLink() {
+		codeLink.click();
+		return new CodePage(driver);
+	}
 
+	@Step("Click 'Contact Us' link")
+	public ContactUsPage clickContactUsLink() {
+		contactUsLink.click();
+		return new ContactUsPage(driver);
+	}
+	
+	@Step("Click 'Purchase Forms' link")
+	public PurchaseFormsPage clickPurchaseFormsLink() {
+		purchaseFormsLink.click();
+		return new PurchaseFormsPage(driver);
+	}
+	
+	@Step("Click 'Store' link")
+	public StorePage clickStoreLink() {
+		storeLink.click();
+		return new StorePage(driver);
+	}
+	
 	@Step("Read current URL")
 	@Attachment("URL")
 	public String getCurrentUrl() {

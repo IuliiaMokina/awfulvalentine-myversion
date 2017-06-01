@@ -4,22 +4,16 @@ import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 //import com.valentine.app.AwfulValentine;
 //import com.valentine.app.CodePage;
 //import com.valentine.app.HomePage;
 
-import ru.yandex.qatools.allure.annotations.Features;
-import ru.yandex.qatools.allure.annotations.Stories;
-
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+
 import org.testng.annotations.Test;
 
 //@Features("Navigation")
@@ -32,6 +26,21 @@ public class NavigationByLinksTest {
 	// @BeforeClass
 	// public void setup() {
 	// onHomePage = AwfulValentine.openHomePage();
+		
+	// @Test
+	// public void NavigationToCodePage() {
+
+	// onCodePage = onHomePage.clickCodeLink();
+
+	// assertEquals(onCodePage.getCurrentUrl(), "http://awful-valentine.com/code/",
+	// "Incorrect URL after click on 'Code' link");
+	// }
+
+	// @AfterClass(alwaysRun = true)
+	// public void tearDown() {
+	// AwfulValentine.close();
+	// }
+	// }
 
 	private WebDriver driver;
 
@@ -49,7 +58,7 @@ public class NavigationByLinksTest {
 	}
 
 	@Test
-	public void NavigationToCodePage() {
+	public void navigationToCodePage() {
 
 		driver.findElement(By.cssSelector("#top-menu > li:nth-child(2)")).click();
 
@@ -58,7 +67,7 @@ public class NavigationByLinksTest {
 	}
 
 	@Test
-	public void NavigationToContactUsPage() {
+	public void navigationToContactUsPage() {
 
 		driver.findElement(By.cssSelector("#top-menu > li:nth-child(3)")).click();
 
@@ -67,7 +76,7 @@ public class NavigationByLinksTest {
 	}
 
 	@Test
-	public void NavigationToPurchaseFormPage() {
+	public void navigationToPurchaseFormPage() {
 		
 		driver.findElement(By.cssSelector("#top-menu > li:nth-child(4)")).click();
 
@@ -76,7 +85,7 @@ public class NavigationByLinksTest {
 	}
 	
 	@Test
-	public void NavigationToStorePage() {
+	public void navigationToStorePage() {
 		
 		driver.findElement(By.cssSelector("#top-menu > li:nth-child(5)")).click();
 
@@ -90,17 +99,4 @@ public class NavigationByLinksTest {
 	}
 }
 
-// @Test
-// public void NavigationToCodePage() {
 
-// onCodePage = onHomePage.clickCodeLink();
-
-// assertEquals(onCodePage.getCurrentUrl(), "http://awful-valentine.com/code/",
-// "Incorrect URL after click on 'Code' link");
-// }
-
-// @AfterClass(alwaysRun = true)
-// public void tearDown() {
-// AwfulValentine.close();
-// }
-// }

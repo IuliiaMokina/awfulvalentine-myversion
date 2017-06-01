@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1496313572772" stop="1496313604926" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1496313583431" stop="1496313585602" status="passed">
+            <name>navigationToPurchaseFormPage</name>
+            <steps>
+                <step start="1496313573064" stop="1496313583380" status="passed">
+                    <name>openHomePage</name>
+                    <title>Open Home Page by URL: http://awful-valentine.com/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313583433" stop="1496313585329" status="passed">
+                    <name>clickPurchaseFormsLink</name>
+                    <title>Click Purchase Forms link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313585335" stop="1496313585590" status="passed">
+                    <name>getCurrentUrl</name>
+                    <title>Read current URL</title>
+                    <attachments>
+                        <attachment title="URL" source="60272260-ff4f-42f0-9cbc-30e48e474842-attachment.txt" type="text/plain"/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationRefactoredTest"/>
+                <label name="testMethod" value="navigationToPurchaseFormPage"/>
+                <label name="feature" value="Navigation"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="14832@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1496313593092" stop="1496313595117" status="passed">
+            <name>testClickCodeLink</name>
+            <steps>
+                <step start="1496313585609" stop="1496313585873" status="passed">
+                    <name>close</name>
+                    <title>Close Browser</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313585875" stop="1496313593089" status="passed">
+                    <name>openHomePage</name>
+                    <title>Open Home Page by URL: http://awful-valentine.com/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313593093" stop="1496313595090" status="passed">
+                    <name>clickCodeLink</name>
+                    <title>Click Code link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313595093" stop="1496313595114" status="passed">
+                    <name>getCurrentUrl</name>
+                    <title>Read current URL</title>
+                    <attachments>
+                        <attachment title="URL" source="a9a467a1-be25-4ae5-a58a-4137369520e0-attachment.txt" type="text/plain"/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationRefactoredTest"/>
+                <label name="testMethod" value="testClickCodeLink"/>
+                <label name="feature" value="Navigation"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="14832@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1496313602552" stop="1496313604727" status="passed">
+            <name>testClickContactUsLink</name>
+            <steps>
+                <step start="1496313595121" stop="1496313595266" status="passed">
+                    <name>close</name>
+                    <title>Close Browser</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313595268" stop="1496313602548" status="passed">
+                    <name>openHomePage</name>
+                    <title>Open Home Page by URL: http://awful-valentine.com/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313602554" stop="1496313604681" status="passed">
+                    <name>clickContactUsLink</name>
+                    <title>Click Contact Us link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313604685" stop="1496313604722" status="passed">
+                    <name>getCurrentUrl</name>
+                    <title>Read current URL</title>
+                    <attachments>
+                        <attachment title="URL" source="312c0c8b-57c2-4931-8d3e-59a3a0fbdc4a-attachment.txt" type="text/plain"/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationRefactoredTest"/>
+                <label name="testMethod" value="testClickContactUsLink"/>
+                <label name="feature" value="Navigation"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="14832@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1496233193702" stop="1496233232514" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1496233203513" stop="1496233205428" status="passed">
+            <name>navigationToCodePage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationByLinksTest"/>
+                <label name="testMethod" value="navigationToCodePage"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="13400@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1496233212638" stop="1496233214701" status="passed">
+            <name>navigationToContactUsPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationByLinksTest"/>
+                <label name="testMethod" value="navigationToContactUsPage"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="13400@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1496233221649" stop="1496233223470" status="passed">
+            <name>navigationToPurchaseFormPage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationByLinksTest"/>
+                <label name="testMethod" value="navigationToPurchaseFormPage"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="13400@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1496233230527" stop="1496233232341" status="passed">
+            <name>navigationToStorePage</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationByLinksTest"/>
+                <label name="testMethod" value="navigationToStorePage"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="13400@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

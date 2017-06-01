@@ -13,7 +13,6 @@ public class AddFifthItemToCartTest {
 	private WebDriver driver;
 
 	@Test
-
 	public void testTheAddCartButtonOpensPopup() {
 
 		System.setProperty("webdriver.chrome.driver", "C:\\temp\\chromedriver.exe");
@@ -34,7 +33,6 @@ public class AddFifthItemToCartTest {
 	}
 
 	@Test(dependsOnMethods = "testTheAddCartButtonOpensPopup")
-
 	public void testAddToCartButtonOnPopupRedirectsToCartPage() {
 
 		waitFor(3000);
@@ -46,7 +44,6 @@ public class AddFifthItemToCartTest {
 	}
 
 	@Test(dependsOnMethods = "testAddToCartButtonOnPopupRedirectsToCartPage")
-
 	public void testAddSecondItemToCartVerifyingTitlePrice() {
 
 		waitFor(1000);

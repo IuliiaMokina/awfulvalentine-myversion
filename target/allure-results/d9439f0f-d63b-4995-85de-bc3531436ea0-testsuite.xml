@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1496313305522" stop="1496313336545" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1496313316836" stop="1496313316864" status="broken">
+            <name>navigationToPurchaseFormPage</name>
+            <failure>
+                <message>Error: Unresolved compilation problems: 
+	driver cannot be resolved
+	driver cannot be resolved
+</message>
+                <stack-trace>java.lang.Error: Unresolved compilation problems: 
+	driver cannot be resolved
+	driver cannot be resolved
+
+	at com.valentine.test.NavigationRefactoredTest.navigationToPurchaseFormPage(NavigationRefactoredTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1496313305883" stop="1496313316772" status="passed">
+                    <name>openHomePage</name>
+                    <title>Open Home Page by URL: http://awful-valentine.com/</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationRefactoredTest"/>
+                <label name="testMethod" value="navigationToPurchaseFormPage"/>
+                <label name="feature" value="Navigation"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="17672@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1496313324486" stop="1496313326799" status="passed">
+            <name>testClickCodeLink</name>
+            <steps>
+                <step start="1496313316868" stop="1496313317232" status="passed">
+                    <name>close</name>
+                    <title>Close Browser</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313317235" stop="1496313324483" status="passed">
+                    <name>openHomePage</name>
+                    <title>Open Home Page by URL: http://awful-valentine.com/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313324487" stop="1496313326472" status="passed">
+                    <name>clickCodeLink</name>
+                    <title>Click Code link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313326477" stop="1496313326792" status="passed">
+                    <name>getCurrentUrl</name>
+                    <title>Read current URL</title>
+                    <attachments>
+                        <attachment title="URL" source="e6ee3a3f-350b-42d6-a466-d81dd85eb116-attachment.txt" type="text/plain"/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationRefactoredTest"/>
+                <label name="testMethod" value="testClickCodeLink"/>
+                <label name="feature" value="Navigation"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="17672@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1496313334068" stop="1496313336319" status="passed">
+            <name>testClickContactUsLink</name>
+            <steps>
+                <step start="1496313326805" stop="1496313326983" status="passed">
+                    <name>close</name>
+                    <title>Close Browser</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313326985" stop="1496313334063" status="passed">
+                    <name>openHomePage</name>
+                    <title>Open Home Page by URL: http://awful-valentine.com/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313334070" stop="1496313336280" status="passed">
+                    <name>clickContactUsLink</name>
+                    <title>Click Contact Us link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496313336286" stop="1496313336317" status="passed">
+                    <name>getCurrentUrl</name>
+                    <title>Read current URL</title>
+                    <attachments>
+                        <attachment title="URL" source="8c615520-c263-4c14-8896-40122187e4ea-attachment.txt" type="text/plain"/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationRefactoredTest"/>
+                <label name="testMethod" value="testClickContactUsLink"/>
+                <label name="feature" value="Navigation"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="17672@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

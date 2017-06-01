@@ -34,8 +34,11 @@ private static final String BASE_URL = "http://awful-valentine.com/";
 	
 	@Attachment("ScreenShot")
 	public static byte[] takeScreenshot(){
+		if (driver != null) {
 		TakesScreenshot TakesScreenshot = TakesScreenshot.class.cast(driver);
 		return TakesScreenshot.getScreenshotAs(OutputType.BYTES);
+	}
+		return new byte[0];
 	}
 
 }

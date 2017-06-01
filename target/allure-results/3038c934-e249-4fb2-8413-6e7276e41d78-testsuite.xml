@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1496236077212" stop="1496236088391" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1496236088199" stop="1496236088212" status="passed">
+            <name>test</name>
+            <steps>
+                <step start="1496236077549" stop="1496236088109" status="passed">
+                    <name>openHomePage</name>
+                    <title>Open Home Page by URL: http://awful-valentine.com/</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1496236088202" stop="1496236088205" status="passed">
+                    <name>clickCodeLink</name>
+                    <title>Click Code link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.valentine.test.NavigationRefactoredTest"/>
+                <label name="testMethod" value="test"/>
+                <label name="feature" value="Navigation"/>
+                <label name="host" value="Julidell"/>
+                <label name="thread" value="13872@Julidell.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

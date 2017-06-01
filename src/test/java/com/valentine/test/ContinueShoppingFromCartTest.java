@@ -3,7 +3,6 @@ package com.valentine.test;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-//import org.apache.tools.ant.taskdefs.WaitFor;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
